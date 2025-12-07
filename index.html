@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>نظام السلامة </title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>نظام السلامة </h1>
+</header>
+
+<section class="controls">
+  <button id="simulateFire">محاكاة حريق</button>
+  <button id="simulateHeat">محاكاة حرارة عالية</button>
+  <button id="simulateCrowd">محاكاة ازدحام</button>
+  <button id="simulateCrowd">اعادة تعيين</button>
+  
+</section>
+
+
+<section class="cams">
+  <div class="cam-box" id="camBox1">
+    <h3>الكاميرا 1</h3>
+    <canvas id="cam1" class="cam"></canvas>
+    <div id="status1" class="status safe">آمنة</div>
+  </div>
+
+  <div class="cam-box" id="camBox2">
+    <h3>الكاميرا 2</h3>
+    <canvas id="cam2" class="cam"></canvas>
+    <div id="status2" class="status safe">آمنة</div>
+  </div>
+</section>
+
+<section class="alerts-section">
+  <h2>التنبيهات</h2>
+  <div id="alerts"></div>
+</section>
+
+<section class="timeline-section">
+  <h2>سجل الأحداث</h2>
+  <div id="timeline"></div>
+</section>
+
+<audio id="alarmSound" src="o.ogg" preload="auto"></audio>
+
+<script src="o.js"></script>
+</body>
+</html>

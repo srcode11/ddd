@@ -1,0 +1,99 @@
+body{
+  margin:0;
+  background:#02070d;
+  font-family:"Segoe UI",Tahoma;
+  color:#e6f7fb;
+}
+
+header{
+  padding:20px;
+  text-align:center;
+  font-size:28px;
+}
+
+.controls{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:15px;
+  padding:10px;
+}
+
+.controls button{
+  padding:10px 15px;
+  background:#09314d;
+  color:#fff;
+  border:none;
+  border-radius:6px;
+  cursor:pointer;
+  transition:0.2s;
+}
+
+.controls button:hover{
+  background:#0b4d77;
+}
+
+.cams{
+  display:flex;
+  gap:20px;
+  padding:20px;
+}
+
+.cam-box{
+  background:#07121a;
+  padding:15px;
+  border-radius:10px;
+  width:50%;
+  transition: all 0.3s ease;
+}
+
+.cam-box.enlarged{
+  width:100%;
+  z-index:10;
+  position:relative;
+}
+
+.cam{
+  width:100%;
+  height:220px;
+  background:#000;
+  border-radius:6px;
+  cursor:pointer;
+}
+
+.status{
+  margin-top:10px;
+  padding:10px;
+  text-align:center;
+  border-radius:6px;
+  font-weight:bold;
+}
+
+.status.safe{ background:#0c331f; color:#9cffce; }
+.status.warn{ background:#3a2a00; color:#ffe29b; }
+.status.danger{ background:#3b0d0d; color:#ffb6b6; }
+
+.alerts-section, .timeline-section{
+  padding:20px;
+}
+
+.alert-item{
+  background:#0c0f18;
+  border-left:4px solid #ffd7a8;
+  padding:10px;
+  margin-bottom:10px;
+  border-radius:4px;
+  font-size:14px;
+}
+
+.alert-item.danger{
+  border-left-color:#ff8a8a;
+}
+
+#timeline .log-row{
+  background:#0c0f18;
+  padding:6px 8px;
+  margin-bottom:5px;
+  border-radius:4px;
+  font-size:14px;
+}
